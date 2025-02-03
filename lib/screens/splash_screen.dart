@@ -16,12 +16,16 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     //! instantiate some blah-blah!!
     super.initState();
+    navigateToWhere();
   }
 
   Future<void> navigateToWhere() async {
     final pref = await SharedPreferences.getInstance();
     final bool hasSeenOnBoarding = pref.getBool('seenOnBoarding') ?? false;
     final bool isLoggedIn = pref.getBool('isLoggedIn') ?? false;
+
+    // Debugging print
+    print('hasSeenOnBoarding: $hasSeenOnBoarding, isLoggedIn: $isLoggedIn');
 
     await Future.delayed(const Duration(seconds: 2));
     if (!mounted) return;
