@@ -6,7 +6,7 @@ import 'package:learning_go_router/screens/screen4.dart';
 import 'package:learning_go_router/screens/screen6.dart';
 import 'package:learning_go_router/screens/splash_screen.dart';
 
-final goRouter = GoRouter(routes: [
+final goRouter = GoRouter(initialLocation: '/', routes: [
   GoRoute(
     path: '/',
     builder: (context, state) {
