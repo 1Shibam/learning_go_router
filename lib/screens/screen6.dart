@@ -8,7 +8,7 @@ class Screen6 extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: Text(
-          'Screen 1',
+          'Screen 6',
           style: TextStyle(fontSize: 60),
         ),
       ),
