@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class Screen1 extends StatelessWidget {
   const Screen1({super.key});
 
@@ -7,9 +8,15 @@ class Screen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text(
-          'Screen 1',
-          style: TextStyle(fontSize: 60),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'screen 1',
+              style: TextStyle(fontSize: 60),
+            ),
+           
+          ],
         ),
       ),
     );
