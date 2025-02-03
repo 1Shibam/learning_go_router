@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_go_router/router/go_router_config.dart';
 
 void main() {
   runApp(const GoRouterLearning());
@@ -9,6 +10,8 @@ class GoRouterLearning extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router();
+    return MaterialApp.router(
+      routerConfig: goRouter,
+    );
   }
 }
