@@ -12,6 +12,7 @@ class GoRouterLearning extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: goRouter,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
